@@ -5,4 +5,5 @@ href: https://aeon.co/essays/why-forests-and-rivers-are-the-most-potent-health-t
 date: 2018-01-20 18:00:00 -0400
 tags: [essays, wellbeing, nature, non-pharmacological]
 categories: EN
+image_url: nature.jpg
 ---
