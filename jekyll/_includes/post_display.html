@@ -1,16 +1,17 @@
 <div class="panel" lang-id="{{ post.categories[0] }}">
+	<div class="panel-image">
+		{% if post.image_url == nil %}
+		<img src="{{ site.url }}/images/hope.jpg" alt="hope" class="img-circle">
+		{% else %}
+		<img src="{{ site.url }}/images/{{ post.image_url }}" alt="forest" class="img-circle">
+		{% endif %}
+	</div>
 	<div>
 		<a class="panel-title" href="{{ post.href }}">{{ post.title }}</a>
 	</div>
 	<div>
 		{% for tag in post.tags %}
 		<a class="btn btn-primary" href="{{ site.url }}/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' | downcase }}/">{{ tag }}</a>
-		{% endfor %} 
-		{% if post.image_url == nil %}
-		<img src="{{ site.url }}/images/hope.jpg" alt="hope" class="img-circle" style="width:100px; height:100px; margin-left: 50px;"> 
-		{% else %}
-		<img src="{{ site.url }}/images/{{ post.image_url }}" alt="forest" class="img-circle" style="width:100px; height:100px; margin-left: 50px;"> 
-		{% endif %}
-
+		{% endfor %}
 	</div>
 </div>

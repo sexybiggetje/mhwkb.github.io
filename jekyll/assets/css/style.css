@@ -262,3 +262,17 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 }
 
 
+.panel-image {
+  float: right;
+  top: 0;
+  right: 0;
+}
+
+.panel-image img {
+  width: 15vmin;
+  height: 15vmin;
+  max-width: 850px;
+  max-height: 850px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
